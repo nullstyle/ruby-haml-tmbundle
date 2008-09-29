@@ -2,14 +2,48 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>contactEmailRot13</key>
-	<string>xriva@fo.bet</string>
-	<key>contactName</key>
-	<string>Kevin Ballard</string>
-	<key>description</key>
-	<string>&lt;a href="http://unspace.ca/discover/haml"&gt;HTML Abstraction Markup Language&lt;/a&gt; is a templating engine for Ruby on Rails.</string>
-	<key>name</key>
-	<string>Ruby Haml</string>
+	<key>changed</key>
+	<dict>
+		<key>mainMenu.excludedItems</key>
+		<array>
+			<string>EA43216C-FD94-4555-83DE-35CC3EEEC708</string>
+		</array>
+		<key>mainMenu.items</key>
+		<array>
+			<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
+			<string>9F5B5DE1-82D5-44E2-A178-6A78C3C89FF3</string>
+			<string>69FA8188-6582-482C-B90F-7ED7FAF5A13A</string>
+			<string>0D59E500-90B6-4DA9-8A34-224775C33625</string>
+		</array>
+		<key>mainMenu.submenus</key>
+		<dict>
+			<key>0D59E500-90B6-4DA9-8A34-224775C33625</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>6D80E88D-7385-4A6C-BEBC-69A1D9C937AD</string>
+					<string>2C6DC18D-1941-4553-8F44-E06AAF7B58A8</string>
+				</array>
+				<key>name</key>
+				<string>XML Prolog</string>
+			</dict>
+			<key>69FA8188-6582-482C-B90F-7ED7FAF5A13A</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>22E3E848-CE90-401B-9DFF-9AEF23A3A692</string>
+					<string>CE71AC06-DD61-484A-A2EE-8868D3C77954</string>
+					<string>1647D163-E430-40A3-BADA-0D1061047EB7</string>
+				</array>
+				<key>name</key>
+				<string>Doc Type</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>deleted</key>
+	<array/>
+	<key>isDelta</key>
+	<true/>
 	<key>uuid</key>
 	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
 </dict>
