@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>:${1:AttributeName} =&gt; "$2"${3:, }$0</string>
+	<string>:escaped
+	$0</string>
 	<key>name</key>
-	<string>Element Attribute</string>
+	<string>Escaped</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>filter</string>
 	<key>uuid</key>
-	<string>EA43216C-FD94-4555-83DE-35CC3EEEC708</string>
+	<string>27D3C7B1-5316-4131-87BC-9899F755C388</string>
 </dict>
 </plist>
