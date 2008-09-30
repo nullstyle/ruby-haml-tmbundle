@@ -5,9 +5,9 @@
 	<key>content</key>
 	<string>%${1:p}</string>
 	<key>keyEquivalent</key>
-	<string>&lt;</string>
+	<string>^&lt;</string>
 	<key>name</key>
-	<string>inset tag</string>
+	<string>Insert Tag</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>uuid</key>
