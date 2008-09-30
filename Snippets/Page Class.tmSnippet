@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>:${1:AttributeName} =&gt; "$2"${3:, }$0</string>
+	<string>page_class</string>
 	<key>name</key>
-	<string>Element Attribute</string>
+	<string>Page Class</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>pc</string>
 	<key>uuid</key>
-	<string>EA43216C-FD94-4555-83DE-35CC3EEEC708</string>
+	<string>AE4F92B7-59B2-4E43-9832-909EB9DEB829</string>
 </dict>
 </plist>

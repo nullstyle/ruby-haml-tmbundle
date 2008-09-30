@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>:${1:AttributeName} =&gt; "$2"${3:, }$0</string>
+	<string>:ruby
+	$0</string>
 	<key>name</key>
-	<string>Element Attribute</string>
+	<string>Ruby</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>:</string>
+	<string>filter</string>
 	<key>uuid</key>
-	<string>EA43216C-FD94-4555-83DE-35CC3EEEC708</string>
+	<string>A9EDC9F6-996E-4E82-B081-FA47072A82B8</string>
 </dict>
 </plist>
