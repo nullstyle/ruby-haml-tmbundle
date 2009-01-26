@@ -71,6 +71,7 @@
 	<string>Ruby Haml</string>
 	<key>ordering</key>
 	<array>
+		<string>DA1358CA-84EA-40FB-9862-B61CA5EF0340</string>
 		<string>4C2E088A-2EDB-44DF-9C62-CE0112B4C237</string>
 		<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
 		<string>C009FB53-7486-4875-9ECD-3E45ACA215C4</string>
@@ -92,6 +93,10 @@
 		<string>6D80E88D-7385-4A6C-BEBC-69A1D9C937AD</string>
 		<string>2C6DC18D-1941-4553-8F44-E06AAF7B58A8</string>
 		<string>EA43216C-FD94-4555-83DE-35CC3EEEC708</string>
+		<string>042BB039-EFC6-4F19-8E09-91CE9AC91A2B</string>
+		<string>F52BA09D-BF1D-4ECF-AA46-CA62E5BDF8A9</string>
+		<string>A9051D63-A839-4AA3-9FD5-DDB08AFB4C0C</string>
+		<string>AE4F92B7-59B2-4E43-9832-909EB9DEB829</string>
 	</array>
 	<key>uuid</key>
 	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
