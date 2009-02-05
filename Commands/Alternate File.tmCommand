@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+@filepath = ENV['TM_FILEPATH']
+
+if @filepath =~ /^(.*?)\/(app|spec)\/(controllers|helpers|models|views)\/(.*?)([^\/\.]+)\.(\w+)$/
+  @app_root, @source_or_spec, @type, @sub_path, @file_base_name, @extension = $1, $2, $3, $4, $5, $6
+  @target_base = "spec" 
+  if @file_base_name[0] == ?_
+    @target_file = @file_base_name[1..-1] + "_partial_spec.rb" 
+  else
+    @target_file = @file_base_name+".haml_spec.rb" 
+  end
+
+  @short_path = "#{@target_base}/#{@type}/#{@sub_path}#{@target_file}" 
+  @open_path = "#{@app_root}/#{@short_path}" 
+  if File.exists?(@open_path)
+    `mate #{@open_path}`
+  else
+    puts "Can't recognize file: #{@filepath}"
+  end
+else
+  puts "Can't recognize file: #{@filepath}" 
+end
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^$</string>
+	<key>name</key>
+	<string>Alternate File</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>text.haml</string>
+	<key>uuid</key>
+	<string>CA046E6E-B0D2-4866-9B6B-CE47C5B1628E</string>
+</dict>
+</plist>
