@@ -12,7 +12,7 @@ export TM_RUBY=$(which "${TM_RUBY:-ruby}")
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>Convert HTML to HAML</string>
+	<string>HTML to HAML</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>uuid</key>

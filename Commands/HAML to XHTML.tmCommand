@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby 
+
+$LOAD_PATH &lt;&lt; "#{ENV['TM_SUPPORT_PATH']}/lib"
+require 'exit_codes.rb'
+require 'open3'
+
+contents = File.read(ENV['TM_FILEPATH'])
+
+errors = nil
+output = nil
+Open3.popen3 "haml -s" do |stdin, stdout, stderr|
+  stdin.write contents
+  stdin.close
+  output = stdout.read
+  errors = stderr.read
+end
+
+unless output.nil? || output.empty?
+  puts output  
+else
+  TextMate.exit_show_tool_tip(errors)
+end
+
+
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>HAML to XHTML</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>text.haml</string>
+	<key>uuid</key>
+	<string>8375331A-35C2-40C2-9C39-48DB5B972A1A</string>
+</dict>
+</plist>
